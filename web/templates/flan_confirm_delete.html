@@ -5,9 +5,9 @@
 
 <div class="container justify-content-center">
     <div>
-    <h1 class="mt-4 titulo letra_cafe d-flex d-block">Eliminar Flan</h1>
+    <h1 class="mt-4 titulo letra_cafe d-flex d-block">Eliminar Producto</h1>
 </div>
-    <p>¿Estás seguro de que quieres eliminar el flan "{{ flan.name }}"?</p>
+    <p>¿Estás seguro de que quieres eliminar el producto "{{ flan.name }}"?</p>
     <form method="post">
         {% csrf_token %}
         <button type="submit" class="btn btn-danger">Eliminar</button>

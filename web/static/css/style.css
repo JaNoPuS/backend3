@@ -2,16 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400..700&family=Playwrite+RO:wght@100..400&display=swap');
 
 :root {
-    --main-bg-brown: #AF5711;
-    --main-bg-light-brown: #F5B03E;
-    --main-bg-ft-brown: #F7C876;
+    --main-bg-brown: #000000;
+    --main-bg-light-brown: #000000;
+    --main-bg-ft-brown: #f9f6f3;
 }
 
-
-body{
-
+body {
     background-image: url(../img/flan_bg2.png);
-    background-repeat: repeat;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta la imagen para cubrir el área visible */
+    background-attachment: fixed; /* Fija la imagen de fondo en su posición mientras se desplaza */
+    background-position: center; /* Centra la imagen en el área visible */
+    background-size: 130%;
 }
 
 .cafe_cuerpo {
@@ -20,7 +22,7 @@ body{
 }
 
 .cafe_liv {
-    background-color: var(--main-bg-light-brown);
+    background-color: transparent;
 }
 .card {
     height: 100%;
@@ -55,8 +57,8 @@ body{
 }
 
 .carousel-inner img {
-    width: 100%;
-    height: 500px; /* Ajusta la altura según tus necesidades */
+    width: 90%;
+    height: 650px; /* Ajusta la altura según tus necesidades */
     object-fit: cover; /* Para que las imágenes mantengan su proporción */
 }
 
@@ -74,7 +76,7 @@ body{
     padding-top: 5rem;
 }
 .solid_border{
-    border: solid 4px black;
+    border: solid 4px rgb(255, 254, 254);
 }
 
 .cafe_pie{
@@ -85,4 +87,57 @@ body{
     font-family: "Caveat", cursive;
     font-size: 2rem;
 
+}
+
+header {
+    background-color: transparent; /* Fondo transparente */
+}
+.fondo-negro {
+    background-color: transparent; /* Cambia de negro a transparente */
+}
+
+.nav-letra {
+    color: #7d5638 !important; /* Color café claro */
+    font-family: "Allura", cursive;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #7d5638 !important; /* Asegura que el color aplique a todos los enlaces de la navbar */
+}
+.navbar {
+    background-color: transparent !important; /* Asegura la transparencia */
+    box-shadow: none; /* Opcional: elimina sombras, si hay alguna */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 20px; /* Ajusta el espacio entre los elementos */
+}
+
+.carousel-inner img {
+    border-radius: 30px; /* Ajusta el valor según el nivel de redondez deseado */
+}
+.carousel-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 5.8); /* Sombra alrededor del carrusel */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Mantiene la forma con esquinas redondeadas */
+    margin: 20px; /* Añade margen para separar el carrusel del resto del contenido */
+}
+
+
+.carousel-inner img {
+    object-fit: cover; /* Mantiene el estilo general de las imágenes */
+}
+
+.text-cafe-oscuro {
+    color: #3c2927; /* Código de color café oscuro */
+}
+
+.card-style {
+    background-color: rgba(249, 246, 243, 0.3); /* Tono beige claro con 30% de transparencia */
+    border: 1px solid #4B2E2B; /* Borde café oscuro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 20px; /* Espacio interno */
+    max-width: 900px;
 }
